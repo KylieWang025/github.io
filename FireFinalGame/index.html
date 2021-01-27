@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fire</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="game.css">  
+    
+    
+  </head>
+  
+  <body>
+		
+		
+	<div class="message" id="lose">You Lose</div>
+	<div class="message" id= "levelup">Moving to Next Level!</div>
+	
+	<div id = "menu">
+		<h3>F i r e</h3>	
+		
+	</div>
+	<div id="gameBoard">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		
+	
+	
+	<div id = "reasonlost"> Oh no! It looks like you ran into an enemy.</div>
+	<div class="button" id="retry" onclick="startGame()">Play Again</div>
+	<div class="button" id="backmenu" onclick="bringMenu()">Menu</div>
+	
+	<div id="instructionstext">
+		<p id ="instructionbasic">
+		<br>
+		left arrow = move left<br>
+		right arrow = move right<br>
+		up arrow = move up<br>
+		down arrow = move down<br>
+		<br>
+		You can only jump over puddles, shoot, and go to next level if you have your fire
+		<br><br>
+		W = shoot up<br>
+		A = shoot left<br>
+		S = shoot down<br>
+		D = shoot right<br>
+		<br>
+		You can only shoot trees<br>
+		Travel to the portal for next level<br><br>
+		</p>
+		
+		<p>
+		You are a creature with the ability to throw fire. Unfortunately you have lost your fire.
+		Travel the lands using the arrow keys to find your fire again.<br> 
+		<br>
+		
+		Only after you and your fire reunite do you gain the ability to shoot fire, and jump over puddles. Use WASD to control
+		the direction you throw your fire. The world you live in has only certain objects you can burn through, mainly trees.<br>
+		<br>
+		
+		Travel to the portal to teleport to other parts of the land. <br>
+		Have fun!
+		</p>
+	</div>
+	
+	<div class="button" id = "start" onclick = "startGame()" >Start</div>
+	<div class="button" id = "instructions" onclick = "instructions()" >Instructions</div>
+	
+	<!-- include an external JavaScript file -->
+    <script src="game.js"></script>
+  </body>
+  
+</html>
